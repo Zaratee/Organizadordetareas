@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etxt_Descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripcion"
+     />
+    <EditText
+        android:id="@+id/etxt_Fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de Entrega"
+        android:layout_below="@+id/etxt_Descripcion"
+        />
+    <EditText
+        android:id="@+id/etxt_Materia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Materia"
+        android:layout_below="@+id/etxt_Fecha"/>
+    <EditText
+        android:id="@+id/etxt_AgregarCompañero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Agregar Compañero"
+        android:layout_below="@+id/etxt_Materia"/>
+
+    <Button
+        android:id="@+id/btn_Agregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:layout_below="@+id/etxt_AgregarCompañero"/>
+    <Button
+        android:id="@+id/btn_Cancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:layout_below="@+id/btn_Agregar"/>
+
+
+
+</RelativeLayout>
